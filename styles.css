@@ -1,0 +1,44 @@
+.table {
+    background-color: #222;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.table img {
+    width: 50px;
+    /* Ajusta el tamaño según necesites */
+    height: auto;
+    border-radius: 4px;
+    /* Bordes redondeados para las imágenes */
+}
+
+
+body {
+    background-color: #121212;
+    font-family: 'Arial', sans-serif;
+    color: #e0e0e0;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
