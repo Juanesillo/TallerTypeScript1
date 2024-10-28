@@ -10,34 +10,48 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row mt-3">
-            <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="text-center">Series</h3>
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Nombre</th>
-                                    <th>Canal</th>
-                                    <th>Temporada</th>
-                                    <th>Imagen</th>
-                                </tr>
-                            </thead>
-                            <tbody id="series">
-                            </tbody>
-                        </table>
-                        <div class="row justify-content-end">
-                            <h5 class="col-4"><strong>Temporadas Promedio:</strong></h5>
-                            <h5 class="col-4" id="total-Temporadas"><strong></strong></h5>
-                        </div>
+<div class="container">
+    <div class="row mt-3">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="text-center">TV Series</h3>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Channel</th>
+                                <th>Seasons</th>
+                                <th>Image</th>
+                            </tr>
+                        </thead>
+                        <tbody id="series">
+                        </tbody>
+                    </table>
+                    <div class="row justify-content-end">
+                        <h5 class="col-4"><strong>Temporadas:</strong></h5>
+                        <h5 class="col-4" id="total-Temporadas"><strong></strong></h5>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Nueva card para mostrar detalles de la serie -->
+        <div class="col-4" id="serie-details" style="display: none;">
+            <div class="card">
+                <div class="card-body">
+                    <h4 id="detalle-nombre"></h4>
+                    <img id="detalle-imagen" class="img-fluid" alt="Serie Image">
+                    <p id="detalle-canal"></p>
+                    <p id="detalle-temporada"></p>
+                    <p id="detalle-resumen"></p>
+                    <a id="detalle-link" href="#" target="_blank">More Info</a>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+
     <script type="module" src="./Script/series.js"></script>
     <script type="module" src="./Script/dataSeries.js"></script>
     <script type="module" src="./Script/main.js"></script>
